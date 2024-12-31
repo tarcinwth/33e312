@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Bubblegum+Sans&family=Cherry+Swash&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800 relative">
+    <!-- Header -->
+    <header class="fixed w-full bg-transparent z-20">
+        <nav class="flex justify-between items-center p-4">
+            <div class="w-32">
+                <img src="imgs/logo.png" alt="Logo" class="w-full h-auto">
+            </div>
+
+            <div class="block lg:hidden">
+                <button id="menu-toggle" class="text-rose-500 focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+
+            <ul id="menu" class="hidden lg:flex space-x-8 text-lg font-bold text-pink-500">
+                <li><a href="#projetos">Serviços</a></li>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Imagens flutuantes (Morangos) -->
+    <div class="floating-images">
+        <img src="imgs/morango.png" alt="Morango 1" class="morango-1">
+        <img src="imgs/morango2.png" alt="Morango 2" class="morango-2">
+        <img src="imgs/morango3.png" alt="Morango 3" class="morango-3">
+        <img src="imgs/morango.png" alt="Morango 1" class="morango-4">
+        <img src="imgs/morango2.png" alt="Morango 2" class="morango-5">
+        <img src="imgs/morango3.png" alt="Morango 3" class="morango-6">
+        <img src="imgs/morango.png" alt="Morango 1" class="morango-7">
+        <img src="imgs/morango2.png" alt="Morango 2" class="morango-8">
+        <img src="imgs/morango3.png" alt="Morango 3" class="morango-9">
+    </div>
+
+    <!-- Seções -->
+    <section id="projetos" class="h-screen animated-gradient flex flex-col justify-center items-center text-center p-10">
+        <h2 class="text-4xl font-bold text-pink-300 mb-6 hover:text-pink-500 transition-all duration-300 ease-in-out">Meus Serviços</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                <div class="w-full h-48 bg-pink-100 rounded-t-lg mb-4 flex justify-center items-center">
+                    <img src="imgs/premade-icon.png" alt="Premade" class="w-full h-full object-cover rounded-t-lg">
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800">PREMADE</h3>
+                <p class="mt-2 text-pink-500">Uma capa pré-pronta que já está totalmente finalizada em seu design. O cliente pode personalizá-la com a alteração do titulo, frase e nome do autor, garantindo uma capa profissional e rápida.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                <div class="w-full h-48 bg-pink-100 rounded-t-lg mb-4 flex justify-center items-center">
+                    <img src="imgs/encomenda-icon.png" alt="Encomenda" class="w-full h-full object-cover rounded-t-lg">
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800">ENCOMENDA</h3>
+                <p class="mt-2 text-pink-500">Uma capa desenvolvida do zero, criada sob medida para o cliente. O design é pensado para atender as preferências e necessidades específicas do autor, desde o conceito visual até a finalização, garantindo uma capa única e personalizada para a obra.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                <div class="w-full h-48 bg-pink-100 rounded-t-lg mb-4 flex justify-center items-center">
+                    <img src="imgs/edicao.jpg" alt="Edição" class="w-full h-full object-cover rounded-t-lg">
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800">EDIÇÃO</h3>
+                <p class="mt-2 text-pink-500">Edição e manipulação de imagens personalizadas para atender às necessidades específicas de cada cliente, desde ajustes simples até transformações complexas, garantindo resultados de alta qualidade.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="h-screen animated-gradient flex flex-col justify-center items-center text-center p-10">
+        <h2 class="starry-text text-4xl font-bold text-pink-300 mb-6 hover:text-pink-500 transition-all duration-300 ease-in-out">
+            Sobre Mim
+            <img src="imgs/stars.gif" alt="Star 1" class="star-1">
+            <img src="imgs/stars.gif" alt="Star 2" class="star-2">
+            <img src="imgs/stars.gif" alt="Star 3" class="star-3">
+            <img src="imgs/stars.gif" alt="Star 4" class="star-4">
+        </h2>
+        <p class="text-lg text-pink-500 max-w-3xl">Olá! Eu sou uma jovem designer gráfica apaixonada pelo universo criativo. Desde 2018, venho produzindo capas para o Wattpad e realizando encomendas personalizadas para capas de livros. Também ofereço edições de fotos em geral, sempre com o objetivo de atender às necessidades e desejos dos meus clientes. Atualmente, estou cursando faculdade de Design Gráfico, aprofundando meus conhecimentos e aprimorando minhas habilidades para criar projetos ainda mais incríveis e únicos.</p>
+    </section>
+
+    <section id="contato" class="h-screen animated-gradient flex flex-col justify-center items-center text-center p-10">
+        <h2 class="text-4xl font-bold text-pink-300 mb-6 hover:text-pink-500 transition-all duration-300 ease-in-out">Contato</h2>
+        <div class="max-w-lg w-full bg-white p-6 rounded-lg shadow-xl">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdF9rW5DEuw9ZOBVyqIXI14V3iWurRzkoclZBlw0IzlfHuuaA/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+        </div>
+        <div class="mt-6">
+            <div class="flex justify-center mt-4 space-x-6">
+                <a href="https://www.instagram.com/seuperfil" target="_blank" class="text-pink-500 hover:text-pink-600 transition-colors duration-300">
+                    <i class="fab fa-instagram fa-lg"></i>
+                </a>
+                <a href="https://www.wattpad.com/user/seuperfil" target="_blank" class="text-pink-500 hover:text-pink-600 transition-colors duration-300">
+                    <i class="fas fa-book fa-lg"></i>
+                </a>
+                <a href="https://www.tiktok.com/@seuperfil" target="_blank" class="text-pink-500 hover:text-pink-600 transition-colors duration-300">
+                    <i class="fab fa-tiktok fa-lg"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white text-center p-4 mt-6">
+        <p class="text-gray-600">© 2024 Meu Portfólio. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
