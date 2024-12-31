@@ -87,21 +87,71 @@
 /* Imagens flutuantes */
 .floating-images {
     position: absolute;
-    z-index: 2;
+    z-index: 10; /* Coloca as imagens atrás do conteúdo */
     pointer-events: none;
     top: 50%;
     left: 50%;
-    width: 100%;
+    width: 20px; /* Tamanho inicial das imagens flutuantes */
     height: 100%;
-    overflow: hidden;
+    overflow: visible; /* Permite que as imagens flutuem sem serem cortadas */
     transform: translate(-50%, -50%);
 }
 
+/* Estilo de cada imagem flutuante */
 .floating-images img {
     width: 40px;
     height: auto;
     position: absolute;
     transform-origin: center center;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+/* Aplique a animação nas imagens individuais */
+.morango-1 {
+    animation: float-1 15s ease-in-out infinite;
+    animation-delay: 0s;
+}
+
+.morango-2 {
+    animation: float-2 15s ease-in-out infinite;
+    animation-delay: 3s;
+}
+
+.morango-3 {
+    animation: float-1 15s ease-in-out infinite;
+    animation-delay: 6s;
+}
+
+.morango-4 {
+    animation: float-2 15s ease-in-out infinite;
+    animation-delay: 9s;
+}
+
+.morango-5 {
+    animation: float-1 15s ease-in-out infinite;
+    animation-delay: 12s;
+}
+
+.morango-6 {
+    animation: float-2 15s ease-in-out infinite;
+    animation-delay: 15s;
+}
+
+.morango-7 {
+    animation: float-1 15s ease-in-out infinite;
+    animation-delay: 18s;
+}
+
+.morango-8 {
+    animation: float-2 15s ease-in-out infinite;
+    animation-delay: 21s;
+}
+
+.morango-9 {
+    animation: float-1 15s ease-in-out infinite;
+    animation-delay: 24s;
 }
 
 /* Movimentação aleatória para as imagens */
@@ -188,12 +238,43 @@
 
 /* Responsividade */
 @media (max-width: 768px) {
+    /* Ajustes gerais para dispositivos móveis */
     .floating-images img {
-        width: 30px;
+        width: 30px; /* Ajustando o tamanho das imagens em telas menores */
     }
 
     .text-lg {
         font-size: 1rem;
     }
-}
 
+    .w-full {
+        max-width: 90%; /* Reduzindo o tamanho das imagens */
+    }
+
+    iframe {
+        height: 400px; /* Reduzindo a altura do iframe em dispositivos móveis */
+    }
+
+    /* Ajustando o menu e a estrutura da página */
+    #menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .space-x-8 {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    .p-10 {
+        padding: 2rem; /* Reduzindo o padding em dispositivos móveis */
+    }
+
+    .p-6 {
+        padding: 1rem;
+    }
+
+    .text-xl {
+        font-size: 1rem; /* Reduzindo o tamanho da fonte para dispositivos móveis */
+    }
+}
